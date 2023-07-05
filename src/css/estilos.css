@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #333333;
+    -webkit-transition: background-image 0.25s ease-in-out;
+    transition: background-image 0.25s ease-in-out;
+    background-size: contain;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 40px;
+    transition: 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    padding: 3px;
+    box-shadow: 1px 1px 7px rgb(0, 0, 0);
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.50);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+ul.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+li.cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+body.modo-escuro li.cartao-pokemon {
+    background-color: rgb(95, 100, 104);
+}
+
+li.cartao-pokemon:hover {
+    background-color: #96d9e6;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+}
+
+body.modo-escuro li.cartao-pokemon:hover {
+    background-color: #96d9e6;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+}
+
+li.cartao-pokemon:hover {
+    transform: scale(1.05);
+}
+
+.modo-escuro {
+    background-image: url("../imagens/fundo-fire-red-noite.jpg");
+    color: white;
+}
+
+div.informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    background-color: #d5dee6;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+body.modo-escuro div.informacoes{
+    background-color: #595d64;
+}
+
+div.informacoes span {
+    padding: 5px;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.grama {
+    background-color: #78C850;
+}
+
+.fogo {
+    background-color: #fc8f42;
+}
+
+.veneno {
+    background-color: #b84bb8;
+}
+
+.voador {
+    background: linear-gradient(#3dc7ef 50%, #bdb9b8 50%);
+}
+
+.agua {
+    background-color: #7bb8e0;
+}
+
+.inseto {
+    background-color: #729f3f;
+}
+
+.normal {
+    background-color: #acaeaf;
+}
+
+.eletrico {
+    background-color: #ffdd00;
+}
+
+.terrestre {
+    background: linear-gradient(#fdec7f 50%, #ab9842 50%);
+}
+
+.fada {
+    background-color: #fdb9e9;
+}
+
+.lutador {
+    background-color: #d56723;
+}
+
+.psiquico {
+    background-color: #f366b9;
+}
+
+.pedra {
+    background-color: #a08925;
+}
+
+.metal {
+    background-color: #9eb7b8;
+}
+
+.gelo {
+    background-color: #54d7ff;
+}
+
+.fantasma {
+    background-color: #7b62a3;
+}
+
+.dragao {
+    background: linear-gradient(#53a4cf 50%, #f16e57 50%);
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px 50px 0px;
+    font-size: 60px;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+footer a:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
