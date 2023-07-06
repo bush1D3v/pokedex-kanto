@@ -199,16 +199,16 @@ main .descricao {
     padding-right: 10px;
 }
 
-footer{
+footer ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
 }
 
 footer a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 50px 50px 0px;
     font-size: 60px;
     width: 90px;
     height: 90px;
@@ -216,6 +216,14 @@ footer a{
     border-radius: 7px;
     box-shadow: 1px 1px 7px rgb(0, 0, 0);
     transition: 0.2s ease-in-out;
+}
+
+footer ul li:first-child{
+    margin: auto auto 50px 50px;
+}
+
+footer ul li:last-child{
+    margin: auto 50px 50px auto;
 }
 
 footer a:hover {
